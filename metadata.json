@@ -1,0 +1,6 @@
+{
+  "name": "LaunchKit NG — Market Voice & Direction Studio",
+  "description": "AI-powered product launch and video marketing platform tailored for the Nigerian market with live brand voice switcher.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

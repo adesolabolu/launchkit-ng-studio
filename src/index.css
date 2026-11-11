@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #92A0E1;
+  --color-brand-secondary: #C2A0E1;
+  --color-brand-accent: #92A0E1;
+  --color-neutral-background: #ffffff;
+  --color-neutral-surface: #fbfaf9;
+  --color-neutral-dark: #000000;
+  --color-text-primary: #111111;
+  --color-text-secondary: #525252;
+  --color-text-light: #4f5465;
+  --color-border-light: #ebebeb;
+  --color-border-dark: #454545;
+
+  --font-primary: 'DM Sans', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
+  overflow-x: clip;
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, #fff 30%, #fffbf3 70%, #fcefef 93%);
+}
+
+.blur-gradient {
+  background: linear-gradient(-78.65deg, #C2A0E1cc, #92A0E1cc 29.48%, #a8b5f0cc 54.25%, #d4c5f0cc 74.21%);
+  filter: blur(100px);
+}
+
+.gradient-pink {
+  background: linear-gradient(135deg, #C2A0E1 0%, #d4c5f0 25%, #e8dff5 75%, #C2A0E1 100%);
+}
+
+.gradient-peach {
+  background: linear-gradient(135deg, #92A0E1 0%, #a8b5f0 25%, #c2d4f5 50%, #d4e0f7 75%, #92A0E1 100%);
+}
+
+.gradient-coral {
+  background: linear-gradient(135deg, #b8a8e1 0%, #C2A0E1 25%, #d4c5f0 50%, #e8dff5 75%, #b8a8e1 100%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes testimonialScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-testimonial-scroll {
+  animation: testimonialScroll 50s linear infinite;
+}
